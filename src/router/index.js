@@ -12,7 +12,8 @@ const routes = [
   { path: "/success", component: () => import("../pages/Login/Success.vue") },
   { path: "/error", component: () => import("../pages/Login/Error.vue") },
   { path: "/user", component: () => import("../pages/User/User.vue") },
-  { path: "/", redirect: "/login" },
+  { path: "/hello", component: () => import("../components/HelloWorld.vue") },
+  { path: "/", redirect: "/hello" },
 ];
 
 const router = new createRouter({
