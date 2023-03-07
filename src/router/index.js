@@ -11,6 +11,7 @@ const routes = [
   { path: "/login", component: login },
   { path: "/success", component: () => import("../pages/Login/Success.vue") },
   { path: "/error", component: () => import("../pages/Login/Error.vue") },
+  { path: "/user", component: () => import("../pages/User/User.vue") },
   { path: "/", redirect: "/login" },
 ];
 

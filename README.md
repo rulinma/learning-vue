@@ -55,3 +55,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## 参考文献
 
 1. <https://cn.vuejs.org/api/sfc-script-setup.html>
+2. <https://vant-ui.github.io/vant/#/zh-CN>
+3. <https://juejin.cn/post/6844904088061083661>
