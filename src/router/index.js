@@ -5,6 +5,8 @@ import {
 } from "vue-router";
 
 const login = () => import("../pages/login/Login.vue");
+const Welcome = () => import("../pages/home/welcome/Welcome.vue");
+const Users = () => import("../pages/home/users/Users.vue");
 
 const routes = [
   //配置默认的路径，默认显示登录页
@@ -14,6 +16,20 @@ const routes = [
   { path: "/user", component: () => import("../pages/user/User.vue") },
   { path: "/hello", component: () => import("../components/HelloWorld.vue") },
   { path: "/", redirect: "/hello" },
+  {
+    path: "/home",
+    component: () => import("../pages/home/Home.vue"),
+    children: [
+      {
+        path: "/welcome",
+        component: Welcome,
+      },
+      {
+        path: "/users",
+        component: Users,
+      },
+    ],
+  },
 ];
 
 const router = new createRouter({
