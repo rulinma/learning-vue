@@ -1,9 +1,13 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="Welcome to Your Vue.js App" />
 </template>
 
-<script>
+<script setup>
+console.log('hello script setup')
+</script>
+
+<script >
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {

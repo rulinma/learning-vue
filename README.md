@@ -42,7 +42,6 @@ yarn lint
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-
 ### 登录
 
 ### axios使用
@@ -54,3 +53,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Vuex
 
 ## 参考文献
+
+1. <https://cn.vuejs.org/api/sfc-script-setup.html>
