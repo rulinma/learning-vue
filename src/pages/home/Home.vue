@@ -17,7 +17,7 @@
                     <!-- 一级菜单 -->
                     <el-submenu :index="item.id + ''" v-for="item in menuList" :key="item.id">
                         <!-- 一级菜单的模板区域 -->
-                        <template slot="title">
+                        <template>
                             <!-- 图标 -->
                             <i :class="iconsObj[item.id]"></i>
                             <!-- 文本 -->
@@ -26,7 +26,7 @@
                         <!-- 二级菜单 -->
                         <el-menu-item :index="'/' + sunItem.path" v-for="sunItem in item.children" :key="sunItem.id"
                             @click="saveActivePath('/' + sunItem.path)">
-                            <template slot="title">
+                            <template>
                                 <!-- 二级菜单的模板区域 -->
                                 <i class="el-icon-menu"></i>
                                 <!-- 图标 -->
@@ -238,7 +238,7 @@ export default {
 }
 
 .el-aside {
-    background-color: #333744;
+    background-color: #0c39ce;
 
     .el-menu {
         border-right: none;
@@ -246,7 +246,7 @@ export default {
 }
 
 .el-main {
-    background-color: #eaedf1;
+    background-color: #b7ceec;
 }
 
 .iconfont {
@@ -254,7 +254,7 @@ export default {
 }
 
 .toggle-button {
-    background: #4a5064;
+    background: #a7b3dc;
     font-size: 10px;
     text-align: center;
     line-height: 24px;

@@ -7,6 +7,7 @@ import {
 const login = () => import("../pages/login/Login.vue");
 const Welcome = () => import("../pages/home/welcome/Welcome.vue");
 const Users = () => import("../pages/home/users/Users.vue");
+const Menus = () => import("../pages/home/menus/Menus.vue");
 
 const routes = [
   //配置默认的路径，默认显示登录页
@@ -27,6 +28,10 @@ const routes = [
       {
         path: "/users",
         component: Users,
+      },
+      {
+        path: "/menus",
+        component: Menus,
       },
     ],
   },

@@ -57,3 +57,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 1. <https://cn.vuejs.org/api/sfc-script-setup.html>
 2. <https://vant-ui.github.io/vant/#/zh-CN>
 3. <https://juejin.cn/post/6844904088061083661>
+4. <https://element-plus.org/>
+5. <https://element-plus.gitee.io/zh-CN/>
