@@ -1,11 +1,3 @@
-<!--
- * @Author: rulinma rulinma@gmail.com
- * @Date: 2023-03-06 18:13:51
- * @LastEditors: rulinma rulinma@gmail.com
- * @LastEditTime: 2023-03-07 18:38:09
- * @Description: 程序员学习和实战指南 https://github.com/rulinma/it 获取更多内容
- * @copyright: 马如林保留所有版权
--->
 <template>
   <div class="hello">
     <div class="example-pagination-block">

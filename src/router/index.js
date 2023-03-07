@@ -4,14 +4,14 @@ import {
   createWebHistory,
 } from "vue-router";
 
-const login = () => import("../pages/Login/Login.vue");
+const login = () => import("../pages/login/Login.vue");
 
 const routes = [
   //配置默认的路径，默认显示登录页
   { path: "/login", component: login },
-  { path: "/success", component: () => import("../pages/Login/Success.vue") },
-  { path: "/error", component: () => import("../pages/Login/Error.vue") },
-  { path: "/user", component: () => import("../pages/User/User.vue") },
+  { path: "/success", component: () => import("../pages/login/Success.vue") },
+  { path: "/error", component: () => import("../pages/login/Error.vue") },
+  { path: "/user", component: () => import("../pages/user/User.vue") },
   { path: "/hello", component: () => import("../components/HelloWorld.vue") },
   { path: "/", redirect: "/hello" },
 ];
