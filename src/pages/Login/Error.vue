@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>登录错误：{{ msg }}</h1>
+        <h1>Error: {{ msg }}</h1>
     </div>
 </template>
 <script>
@@ -14,3 +14,4 @@ export default {
         this.msg = this.$route.query.message;
     }
 };
+</script>

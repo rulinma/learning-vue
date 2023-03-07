@@ -1,25 +1,36 @@
-import Vue from "vue"; //引入 Vue
-import VueRouter from "vue-router"; //引入 Vue 路由
+import {
+  createRouter,
+  createWebHashHistory,
+  createWebHistory,
+} from "vue-router";
 
-Vue.use(VueRouter); //安装插件
+const login = () => import("../pages/Login/Login.vue");
+
 const routes = [
   //配置默认的路径，默认显示登录页
-  { path: "/", component: () => import("@/pages/Login/Login") },
-
-  //配置登录成功页面，使用时需要使用 path 路径来实现跳转
-  { path: "/success", component: () => import("@/pages/Login/Success") },
-
-  //配置登录失败页面，使用时需要使用 path 路径来实现跳转
-  {
-    path: "/error",
-    component: () => import("@/pages/Login/Error"),
-    hidden: true,
-  },
+  { path: "/login", component: login },
+  { path: "/success", component: () => import("../pages/Login/Success.vue") },
+  { path: "/error", component: () => import("../pages/Login/Error.vue") },
+  { path: "/", redirect: "/login" },
 ];
 
-const router = new VueRouter({
-  mode: "history",
+const router = new createRouter({
+  history: createWebHistory(),
   routes,
+});
+
+// 全局路由守卫
+router.beforeEach((to, from, next) => {
+  console.log("to ", to, " from ", from);
+  if (to.meta.title) {
+    document.title = `${to.meta.title}`;
+  }
+  next();
+});
+
+router.afterEach((to, from) => {
+  // console.log(to, from)
+  console.log("afterEach");
 });
 
 export default router;

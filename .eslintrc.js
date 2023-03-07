@@ -3,8 +3,9 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 7,
     sourceType: "module",
+    parser: "babel-eslint",
   },
-  parser: "vue-eslint-parser", // 添加这一句
+  parser: "vue-eslint-parser",
   rules: {
     "@typescript-eslint/explicit-module-boundary-types": "off",
   },
