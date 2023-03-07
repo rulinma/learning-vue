@@ -17,12 +17,13 @@
                     <!-- 一级菜单 -->
                     <el-submenu :index="item.id + ''" v-for="item in menuList" :key="item.id">
                         <!-- 一级菜单的模板区域 -->
-                        <template #title>
+                        <template>
                             <!-- 图标 -->
                             <i :class="iconsObj[item.id]"></i>
                             <!-- 文本 -->
                             <span>{{ item.authName }}</span>
                         </template>
+
                         <!-- 二级菜单 -->
                         <el-menu-item :index="'/' + sunItem.path" v-for="sunItem in item.children" :key="sunItem.id"
                             @click="saveActivePath('/' + sunItem.path)">
