@@ -1,7 +1,7 @@
 <template>
     <div>
         error
-        <van-image round lazy-load width="200" height="200" :src="img">
+        <van-image round width="200" height="200" :src="img">
             <template #loading>
                 <van-loading type="spinner" size="30" />
             </template>
