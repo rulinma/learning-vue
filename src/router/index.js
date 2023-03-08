@@ -4,6 +4,8 @@ import {
   createWebHistory,
 } from "vue-router";
 
+import Layout from "@/layout";
+
 const login = () => import("../pages/login/Login.vue");
 const Welcome = () => import("../pages/home/welcome/Welcome.vue");
 const Users = () => import("../pages/home/users/Users.vue");
@@ -45,6 +47,7 @@ const routes = [
       },
     ],
   },
+  { path: "/layout", component: Layout },
 ];
 
 const router = new createRouter({
