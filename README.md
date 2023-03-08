@@ -59,3 +59,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 3. <https://juejin.cn/post/6844904088061083661>
 4. <https://element-plus.org/>
 5. <https://element-plus.gitee.io/zh-CN/>
+6. <https://github.com/TheFirework/vue-element-plus-admin>
+7. <https://github.com/pure-admin/vue-pure-admin>

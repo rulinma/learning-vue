@@ -29,9 +29,19 @@ const routes = [
         path: "/users",
         component: Users,
       },
+    ],
+  },
+  {
+    path: "/menus",
+    component: Menus,
+    children: [
       {
-        path: "/menus",
-        component: Menus,
+        path: "/welcome",
+        component: Welcome,
+      },
+      {
+        path: "/users",
+        component: Users,
       },
     ],
   },
