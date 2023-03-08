@@ -10,7 +10,9 @@
                 <!-- 顶部 -->
                 <el-header height="50px">header</el-header>
                 <!-- 主页面 -->
-                <el-main>主页面</el-main>
+                <el-main>
+                    <router-view></router-view>
+                </el-main>
             </el-container>
         </el-container>
     </el-row>

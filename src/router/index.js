@@ -47,7 +47,20 @@ const routes = [
       },
     ],
   },
-  { path: "/layout", component: Layout },
+  {
+    path: "/layout",
+    component: Layout,
+    children: [
+      {
+        path: "/welcome2",
+        component: Welcome,
+      },
+      {
+        path: "/users2",
+        component: Users,
+      },
+    ],
+  },
 ];
 
 const router = new createRouter({
